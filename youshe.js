@@ -59,8 +59,6 @@ on(headerBanner1, 5, headerBanner2ul, 4)
 on(headerBanner1, 7, headerBanner8ul, 0)
 
 //轮播图
-//如何做到图片切换的效果
-//怎么做到鼠标在小圆点上 出现效果 后面不崩
 
 // ajax({
 //     url: 'https://www.easy-mock.com/mock/5e3e8bfa0d15c76d78fb0c72/youshe/',
@@ -121,16 +119,6 @@ for (let i = 0; i < points.length; i++) {
         let focuswidth = img.offsetWidth//只能四舍五入为整数..害 这可咋办
         animate(items[0], -focuswidth * (index))
 })
-    //不对
-    // if(i!=index){
-    //     points[i].addEventListener('mouseover',function(){
-    //         points[i].style.opacity='1'
-            
-    //     })
-    //     points[i].addEventListener('mouseout',function(){
-    //         points[i].style.opacity='0.7'})
-    // }
-
 }
 for(let i = 0;i<points.length;i++){
 }
