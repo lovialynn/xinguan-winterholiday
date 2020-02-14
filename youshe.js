@@ -94,7 +94,6 @@ let circle = 0
 let count = 0;
 function animate(obj, target, callback) {
     clearInterval(obj.timer);
-    console.log(target)
     obj.timer = setInterval(function () {
         var step = (target - obj.offsetLeft) / 10;
         step = step > 0 ? Math.ceil(step) : Math.floor(step);
@@ -203,7 +202,7 @@ goPrebtn.addEventListener('mouseout', function () {
     goPrebtn.style.opacity = 0.1
 })
 
-//第二个轮播图 因为第一个不能实现有转换的效果 所以换了一种方法做第二个类似轮播图
+//第二个轮播图 因为第一个不能实现有转换的效果 所以换了一种方法做第二个类似轮播图 最后还是把第一个轮播图改了
 let container1btnpre = document.getElementsByClassName('container-1btnpre');
 let container1btnnext = document.getElementsByClassName('container-1btnnext');
 let containerb31 = document.getElementById('containerb-3-1')
