@@ -59,23 +59,23 @@ on(headerBanner1, 5, headerBanner2ul, 4)
 on(headerBanner1, 7, headerBanner8ul, 0)
 
 //轮播图
-ajax({
- url: 'https://www.easy-mock.com/mock/5e3e8bfa0d15c76d78fb0c72/youshe/',
- type: "GET",
-  async: true,
-   data: 'lunbotu',
-  success: (data) =>  {
-         data = JSON.parse(data)
-       console.log(data) 
-       console.log(data.pictures[0])
-        for (let i = 0; i < data.pictures.length; i++) {
-       itemimgs[i].src = data.pictures[i]
-     }
-      itemimgs[itemimgs.length-1].src = data.pictures[0]
-     },
-   error: () => {alert('失败')
-    }
-})
+// ajax({
+//     url: 'https://www.easy-mock.com/mock/5e3e8bfa0d15c76d78fb0c72/youshe/',
+//     type: "GET",
+//     async: true,
+//     data: 'lunbotu',
+//     success: (data) =>  {
+//         data = JSON.parse(data)
+//         console.log(data) 
+//         console.log(data.pictures[0])
+//         for (let i = 0; i < data.pictures.length; i++) {
+//        itemimgs[i].src = data.pictures[i]
+//       }
+//       itemimgs[itemimgs.length-1].src = data.pictures[0]
+//     },
+//     error: () => {alert('失败')
+//     }
+// })
 let itemimgs = document.getElementsByClassName('itemimg')
 let list = document.getElementsByClassName('list')
 let img = document.getElementById('img')
